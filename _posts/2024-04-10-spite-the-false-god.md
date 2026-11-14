@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spite - The False God
-category: projects
+category: games
 description: You're the god of death. Your offerings have ceased due to demons taking over your godly temple. Slash your way through the jungle and lay waste to the maliciousness within.
 image: /assets/img/projects/spite-the-false-god/thumbnail.png
 gallery:

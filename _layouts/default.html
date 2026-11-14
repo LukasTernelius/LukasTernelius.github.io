@@ -20,10 +20,21 @@
           {% if forloop.first %}
           <li>
             <details class="nav-projects">
-              <summary>Projects</summary>
+              <summary>Game projects</summary>
               <ul>
-                {% assign all_posts = site.posts | sort: "date" | reverse %}
-                {% for post in all_posts %}
+                {% assign game_posts = site.posts | where: "category", "games" | sort: "date" | reverse %}
+                {% for post in game_posts %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class="nav-projects">
+              <summary>Tech</summary>
+              <ul>
+                {% assign tech_posts = site.posts | where: "category", "tech" | sort: "date" | reverse %}
+                {% for post in tech_posts %}
                 <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
                 {% endfor %}
               </ul>

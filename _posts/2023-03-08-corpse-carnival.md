@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Corpse Carnival
-category: projects
+category: games
 description: Throw your head at scary bats, talk with quirky ghosts, and save the 5000-year-old theme park as the only zombie employee left.
 image: /assets/img/projects/corpse-carnival/sprite.png
 gallery:

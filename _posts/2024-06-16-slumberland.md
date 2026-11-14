@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slumberland
-category: projects
+category: games
 description: Traverse and glide through Slumberland in search of the missing stars, so that you and the other inhabitants may sleep again.
 image: /assets/img/projects/slumberland/thumbnail.png
 gallery:

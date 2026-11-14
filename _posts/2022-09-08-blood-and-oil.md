@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blood and Oil
-category: projects
+category: games
 description: Unleash the fury and fight back against the evil empire's horde of foot soldiers, with the aid of your mechanical gun-arm.
 image: /assets/img/projects/blood-and-oil/screenshot1.png
 gallery:

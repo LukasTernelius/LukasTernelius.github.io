@@ -5,20 +5,20 @@ author: Lukas
 nav: false
 ---
 
-{% assign projects = site.posts | where: "category", "projects" | sort: "date" %}
-## Projects
+{% assign game_posts = site.posts | where: "category", "games" | sort: "date" | reverse %}
+## Game projects
 
 <ul>
-  {% for post in projects %}
+  {% for post in game_posts %}
   <li>{{ post.date | date: "%Y-%m-%d" }} — <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
-{% assign others = site.posts | where_exp: "post", "post.category != 'projects'" | sort: "date" %}
-## Other posts
+{% assign tech_posts = site.posts | where: "category", "tech" | sort: "date" | reverse %}
+## Tech
 
 <ul>
-  {% for post in others %}
+  {% for post in tech_posts %}
   <li>{{ post.date | date: "%Y-%m-%d" }} — <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Delichess
-category: projects
+category: games
 description: Aid the tiny chef Franchessca on her quest to satisfy the King's unsatiable hunger.
 image: /assets/img/projects/delichess/screenshot1.png
 gallery:

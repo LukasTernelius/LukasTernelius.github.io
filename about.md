@@ -14,7 +14,7 @@ During my studies at TGA I have taken part in eight game projects going from ide
 
 My work in these group projects as a programmer has mostly been with internal systems like scene handling and pipeline work with other disciplines, expanding into graphical pipeline/engine structuring in the later projects. I have often been in the role of a firefighter when needed and been active everywhere in the project.
 
-At TGA we do a specialisation project for seven weeks, for which I chose to make a graphic backend for my own engine in DirectX 12 and learn more about backend development in general. I cover this more in depth on the [specialisation post]({{ '/specialisation/2024/02/12/specialisation.html' | relative_url }}).
+At TGA we do a specialisation project for seven weeks, for which I chose to make a graphic backend for my own engine in DirectX 12 and learn more about backend development in general. I cover this more in depth on the [specialisation post]({{ '/tech/2024/02/12/specialisation.html' | relative_url }}).
 
 As one can discern from the text above, my interests are in the nitty gritty of engine development. I do however consider myself good at dealing with a range of topics including gameplay related code and creating tools for other disciplines or programmers to use, and I would love the opportunity to work closely with experienced programmers and learn from my betters.
 

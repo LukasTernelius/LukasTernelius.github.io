@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Specialisation - Bindless DirectX 12 Engine
-category: specialisation
+category: tech
 description: Building a bindless DirectX 12 renderer for my own engine, Shipyard.
 image: /assets/img/specialisation/screenshot.png
 gallery:
