@@ -26,14 +26,3 @@ order: 1
   </li>
   {% endfor %}
 </ul>
-
-<h2>Pages</h2>
-<ul>
-  {% for page in site.pages %}
-    {% unless page.url == '/' %}
-    <li>
-      <a href="{{ page.url | relative_url }}">{{ page.title | default: page.name }}</a>
-    </li>
-    {% endunless %}
-  {% endfor %}
-</ul>
