@@ -1,0 +1,11 @@
+:root {
+  --background: rgb(255, 255, 255);
+  --text: #222222;
+  --accent: #2a7ae2;
+  --border: #e8e8e8;
+  --card-background: #ffffff;
+  --sidebar-background: #fafafa;
+  --footer-background: #fafafa;
+  --radius: 2px;
+  --sidebar-width: 200px;
+}

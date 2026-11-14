@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <p class="post-date">{{ page.date | date: "%Y-%m-%d" }}</p>
+  </header>
+  {% assign slides = "" | split: "" %}
+  {% if page.image %}{% assign slides = slides | push: page.image %}{% endif %}
+  {% if page.gallery %}{% for img in page.gallery %}{% assign slides = slides | push: img %}{% endfor %}{% endif %}
+  {% if slides.size > 0 %}
+  <div class="carousel" data-carousel>
+    {% for img in slides %}
+    <img class="carousel-slide{% if forloop.first %} is-active{% endif %}" src="{{ img | relative_url }}" alt="{{ page.title }}">
+    {% endfor %}
+    {% if slides.size > 1 %}
+    <button class="carousel-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+    <button class="carousel-btn next" type="button" aria-label="Next image">&#10095;</button>
+    <div class="carousel-dots">
+      {% for img in slides %}
+      <button class="dot{% if forloop.first %} is-active{% endif %}" type="button" aria-label="Go to image {{ forloop.index }}"></button>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  <script>
+  document.querySelectorAll('[data-carousel]').forEach(function (c) {
+    var slides = c.querySelectorAll('.carousel-slide');
+    var dots = c.querySelectorAll('.dot');
+    var i = 0;
+    function show(n) {
+      i = (n + slides.length) % slides.length;
+      slides.forEach(function (s, k) { s.classList.toggle('is-active', k === i); });
+      dots.forEach(function (d, k) { d.classList.toggle('is-active', k === i); });
+    }
+    var prev = c.querySelector('.prev');
+    var next = c.querySelector('.next');
+    if (prev) prev.addEventListener('click', function () { show(i - 1); });
+    if (next) next.addEventListener('click', function () { show(i + 1); });
+    dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); }); });
+  });
+  </script>
+  {% endif %}
+  {% if page.embed %}
+  <div class="embed">
+    <iframe src="{{ page.embed }}" frameborder="0" allowfullscreen scrolling="no"></iframe>
+  </div>
+  {% endif %}
+  {{ content }}
+</article>
